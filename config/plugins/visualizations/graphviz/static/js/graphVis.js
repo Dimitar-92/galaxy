@@ -162,7 +162,7 @@ function parseTextMatrix(data) {
 ///// parsing function for json: for link/egde and "" issues
 function parseJson( data ) {
 
-    if( data.hasOwnProperty( 'links' ) ){
+    /*if( data.hasOwnProperty( 'links' ) ){
         data.edges = data.links;
         delete data.links;
     }
@@ -181,6 +181,6 @@ function parseJson( data ) {
                 target  : data.nodes[ edge.target ].data.id
             })
         };
-    });
+    });*/
 	createGraph( data );
 }
