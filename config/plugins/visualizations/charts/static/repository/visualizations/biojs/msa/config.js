@@ -2,7 +2,7 @@ define( [], function() {
     return {
         title       : 'Multiple Sequence Alignment',
         library     : 'BioJS',
-        datatypes   : [ 'txt' ],
+        datatypes   : [ 'txt', 'fasta' ],
         keywords    : 'biojs',
         description : 'The MSA viewer is a modular, reusable component to visualize large MSAs interactively on the web.',
         settings    : {
