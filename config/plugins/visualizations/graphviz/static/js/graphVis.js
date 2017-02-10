@@ -166,26 +166,27 @@ function parseJson( data ) {
         data.edges = data.links;
         delete data.links;
 
+        data.nodes = data.nodes.map( function _processNode( node ){
+            return {
+                
+                data : $.extend( {}, node.data, {
+                    id : node.id + ''
+                })
+               
+            };
+        });
+        
+        data.edges = data.edges.map( function _processEdge( edge ){
+            return {
+                data : $.extend( {}, edge.data, {
+                    id      : edge.id || undefined,
+                    source  : edge.source,
+                    target  : edge.target
+                })
+            };
+        });
+
     }
-	data.nodes = data.nodes.map( function _processNode( node ){
-        return {
-            
-            data : $.extend( {}, node.data, {
-                id : node.id + ''
-            })
-           
-        };
-    });
-    
-    data.edges = data.edges.map( function _processEdge( edge ){
-        return {
-            data : $.extend( {}, edge.data, {
-                id      : edge.id || undefined,
-                source  : data.nodes[ edge.source-1 ].data.id,
-                target  : data.nodes[ edge.target-1 ].data.id
-            })
-        };
-    });
     
 	createGraph( data );
 }
