@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      "js-extend@0.0.2",
+      "/home/dimitar/Documents/Galaxy/galaxy/config/plugins/visualizations/charts/node_modules/biojs-vis-blasterjs"
+    ]
+  ],
+  "_from": "js-extend@0.0.2",
+  "_id": "js-extend@0.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/js-extend",
+  "_npmUser": {
+    "email": "mattos.trk@gmail.com",
+    "name": "vmattos"
+  },
+  "_npmVersion": "1.3.21",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "js-extend",
+    "raw": "js-extend@0.0.2",
+    "rawSpec": "0.0.2",
+    "scope": null,
+    "spec": "0.0.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/biojs-vis-blasterjs"
+  ],
+  "_resolved": "https://registry.npmjs.org/js-extend/-/js-extend-0.0.2.tgz",
+  "_shasum": "1d61ac7ef41f3b0641ab009895df41028ae0120b",
+  "_shrinkwrap": null,
+  "_spec": "js-extend@0.0.2",
+  "_where": "/home/dimitar/Documents/Galaxy/galaxy/config/plugins/visualizations/charts/node_modules/biojs-vis-blasterjs",
+  "author": {
+    "name": "Vitor Mattos"
+  },
+  "bugs": {
+    "url": "https://github.com/vmattos/js-extend/issues"
+  },
+  "dependencies": {},
+  "description": "A simple extend function based on underscore",
+  "devDependencies": {
+    "nodeunit": "~0.8.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "1d61ac7ef41f3b0641ab009895df41028ae0120b",
+    "tarball": "https://registry.npmjs.org/js-extend/-/js-extend-0.0.2.tgz"
+  },
+  "homepage": "https://github.com/vmattos/js-extend",
+  "keywords": [
+    "extend"
+  ],
+  "license": "ISC",
+  "main": "extend.js",
+  "maintainers": [
+    {
+      "name": "vmattos",
+      "email": "mattos.trk@gmail.com"
+    }
+  ],
+  "name": "js-extend",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vmattos/js-extend.git"
+  },
+  "scripts": {
+    "test": "node test/test-runner"
+  },
+  "version": "0.0.2"
+}

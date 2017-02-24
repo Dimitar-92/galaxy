@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "js-class@0.0.2",
+      "/home/dimitar/Documents/Galaxy/galaxy/config/plugins/visualizations/charts/node_modules/biojs-vis-blasterjs"
+    ]
+  ],
+  "_from": "js-class@0.0.2",
+  "_id": "js-class@0.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/js-class",
+  "_npmUser": {
+    "email": "easeway@gmail.com",
+    "name": "easeway"
+  },
+  "_npmVersion": "1.2.14",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "js-class",
+    "raw": "js-class@0.0.2",
+    "rawSpec": "0.0.2",
+    "scope": null,
+    "spec": "0.0.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/biojs-vis-blasterjs"
+  ],
+  "_resolved": "https://registry.npmjs.org/js-class/-/js-class-0.0.2.tgz",
+  "_shasum": "56c33db955fab52caef9079af73641ba4f981dbf",
+  "_shrinkwrap": null,
+  "_spec": "js-class@0.0.2",
+  "_where": "/home/dimitar/Documents/Galaxy/galaxy/config/plugins/visualizations/charts/node_modules/biojs-vis-blasterjs",
+  "author": {
+    "email": "easeway@gmail.com",
+    "name": "Yisui Hu"
+  },
+  "bugs": {
+    "url": "https://github.com/easeway/js-class/issues"
+  },
+  "dependencies": {},
+  "description": "Define classes in Javascript",
+  "devDependencies": {
+    "mocha": "1.10.0",
+    "uglify-js": "2.3.6"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "56c33db955fab52caef9079af73641ba4f981dbf",
+    "tarball": "https://registry.npmjs.org/js-class/-/js-class-0.0.2.tgz"
+  },
+  "homepage": "https://github.com/easeway/js-class#readme",
+  "keywords": [
+    "OOP",
+    "class",
+    "object-oriented"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/evo-cloud/elements/raw/master/LICENSE"
+    }
+  ],
+  "main": "./class",
+  "maintainers": [
+    {
+      "name": "easeway",
+      "email": "easeway@gmail.com"
+    }
+  ],
+  "name": "js-class",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easeway/js-class.git"
+  },
+  "scripts": {
+    "build": "uglifyjs class.js --comments --wrap -m -o js-class.min.js",
+    "test": "mocha class-test.js"
+  },
+  "version": "0.0.2"
+}
