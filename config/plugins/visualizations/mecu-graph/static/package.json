@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      "mecu-graph",
+      "/home/aveg"
+    ]
+  ],
+  "_from": "mecu-graph@*",
+  "_id": "mecu-graph@0.1.2",
+  "_inCache": true,
+  "_location": "/mecu-graph",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/mecu-graph-0.1.2.tgz_1487260021043_0.05989848054014146"
+  },
+  "_npmUser": {
+    "email": "code@dallago.us",
+    "name": "sacdallago"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "mecu-graph",
+    "raw": "mecu-graph",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/mecu-graph/-/mecu-graph-0.1.2.tgz",
+  "_shasum": "99ce03f4b989710c2bfcac4ef5ff3a3401028642",
+  "_shrinkwrap": null,
+  "_spec": "mecu-graph",
+  "_where": "/home/aveg",
+  "author": {
+    "email": "code@dallago.us",
+    "name": "Christian Dallago"
+  },
+  "bugs": {
+    "url": "https://github.com/tpca/mecu-graph/issues"
+  },
+  "dependencies": {
+    "cytoscape": "^2.7.13",
+    "cytoscape-cola": "^1.4.3",
+    "everpolate": "^0.0.3",
+    "webcola": "^3.3.2"
+  },
+  "description": "Visualization of protein similarity based on melting curves and distance metric",
+  "devDependencies": {
+    "browserify": "latest",
+    "watchify": "latest",
+    "webpack": "latest"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "99ce03f4b989710c2bfcac4ef5ff3a3401028642",
+    "tarball": "https://registry.npmjs.org/mecu-graph/-/mecu-graph-0.1.2.tgz"
+  },
+  "gitHead": "00c741782af602271009d125c46bcf2efb2e385a",
+  "homepage": "https://github.com/tpca/mecu-graph",
+  "installable": true,
+  "keywords": [
+    "bioinformatics",
+    "biojs",
+    "biojs",
+    "graph",
+    "js",
+    "mecu",
+    "protein",
+    "visualization"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/mecu-graph.js",
+  "maintainers": [
+    {
+      "name": "sacdallago",
+      "email": "code@dallago.us"
+    }
+  ],
+  "name": "mecu-graph",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tpca/mecu-graph.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "docs": "mr-doc -s lib/ -o docs/ -n 'MeCu Graph'",
+    "prepublish": "webpack",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "version": "0.1.2"
+}
