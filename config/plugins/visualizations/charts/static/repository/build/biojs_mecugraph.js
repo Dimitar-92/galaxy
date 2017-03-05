@@ -44,10 +44,10 @@ define(function() { return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(8) ], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(8) ], __WEBPACK_AMD_DEFINE_RESULT__ = function(Mecugraph) {
 	    return Backbone.Model.extend({
 	        initialize: function( options ) {
-	            alert("Run 3");
+	            alert("Run 6");
 	            var chart    = options.chart;
 	            var dataset  = options.dataset;
 	            var settings = options.chart.settings;
@@ -437,8 +437,9 @@ define(function() { return /******/ (function(modules) { // webpackBootstrap
 	            ]
 	        }
 	    ];
-	    var graph = new mecugraph.MecuGraph({element: '#'  + options.targets[ 0 ]});
-	    t = graph.add(data);
+	        console.log(Mecugraph);
+	        var graph = Mecugraph({element: '#'  + options.targets[ 0 ]});
+	        graph.add(data);
 	
 	        }
 	    });

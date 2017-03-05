@@ -7,6 +7,7 @@ define( [ 'utilities/utils', 'plugins/cytoscape/cytoscape' ], function( Utils, C
                 url     : dataset.download_url,
                 success : function( content ) {
                     try {
+                        console.log(Cytoscape);
                         Cytoscape( Utils.merge( content, {
                             container: $( '#'  + options.targets[ 0 ] ),
                             layout: {

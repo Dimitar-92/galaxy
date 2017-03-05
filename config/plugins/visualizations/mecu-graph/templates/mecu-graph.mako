@@ -10,14 +10,14 @@
         <title>${hda.name | h} | ${visualization_name}</title>
 
         <style>
-        #mecuGraph {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-        }
-    </style>
+            #mecuGraph {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+        </style>
 
 
         ${h.javascript_link( app_root + 'build/mecu-graph.js' )}
@@ -26,10 +26,8 @@
 
         <h1 style="text-align: center; width: 100%">MeCu-Graph</h1>
         <div id="container" style="display:flex">
-            Should load below:
             <div id="mecuGraph">
             </div>
-            Should to here.
         </div>
 
         <script type="text/javascript">

@@ -1,7 +1,7 @@
-define( [ 'plugins/biojs/mecugraph/mecu-graph/build/mecu-graph' ], function() {
+define( [ 'plugins/biojs/mecugraph/mecugraph/build/mecugraph' ], function(Mecugraph) {
     return Backbone.Model.extend({
         initialize: function( options ) {
-            alert("Run 3");
+            alert("Run 6");
             var chart    = options.chart;
             var dataset  = options.dataset;
             var settings = options.chart.settings;
@@ -391,8 +391,9 @@ define( [ 'plugins/biojs/mecugraph/mecu-graph/build/mecu-graph' ], function() {
             ]
         }
     ];
-    var graph = new mecugraph.MecuGraph({element: '#'  + options.targets[ 0 ]});
-    t = graph.add(data);
+        console.log(Mecugraph);
+        var graph = Mecugraph({element: '#'  + options.targets[ 0 ]});
+        graph.add(data);
 
         }
     });
