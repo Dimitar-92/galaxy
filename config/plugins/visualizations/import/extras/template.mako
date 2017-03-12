@@ -13,6 +13,13 @@
         -->
 
         <!-- end -->
+
+        <!-- Needed jquery plugin if you want to use the document ready function -->
+        ${h.javascript_link('https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')}
+
+        <script>
+
+        //main js function for dataset import
         $(document).ready(function() {
 
             // variables needed for data extraction
@@ -24,26 +31,19 @@
 
             
             // build cases for different data types as shown below
-            <!-- start
+            <!-- 
+            -start-
             Example:
 
             var dataUrl;
 
             switch( hdaExt ){
-                case 'txt':
-                    dataUrl = rawUrl + '/' + hdaId + '/display?to_ext=txt';
-                    $.ajax(dataUrl, {
-                        dataType    : 'text',
-                        success     : parseTextMatrix,
-                        error       : errorHandler
-                    });
-                    break;
 
                 case 'json':
                     dataUrl = rawUrl + '/' + hdaId + '/display?to_ext=json';
                     $.ajax(dataUrl, {
                         dataType    : 'json',
-                        success     : parseJson,
+                        success     : parse,
                         error       : errorHandler
                     });
                     break;
@@ -52,18 +52,31 @@
                     dataUrl = apiUrl + '/' + hdaId;
                     $.ajax(dataUrl, {
                         dataType    : 'json',
-                        success     : parseNodeEdge,
+                        success     : parse,
                         error       : errorHandler,
-                        data : {
-                            data_type : 'raw_data',
-                            provider  : 'node-edge'
-                        }
                     });
             }
 
-            end -->
+            -end-
+            -->
 
         });
+
+        // use these functions to parse the predefined cases
+        <--
+        -start-
+        
+        function parse(data){
+            // default function for parsing
+        };
+
+        function errorHandler(){
+            // default function for error handling
+        }
+        
+        -end- 
+        -->
+        </script>
     </head>
     <body>
         <!-- Should be customized to what the plugin needs -->
