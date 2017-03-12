@@ -1,4 +1,5 @@
 #!/bin/bash
 
-#insert import commands below
-npm install mecu-graph
+# insert import commands below
+# Example:
+# npm install mecu-graph
