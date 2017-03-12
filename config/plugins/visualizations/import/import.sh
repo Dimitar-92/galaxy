@@ -6,6 +6,29 @@ then
   exit 1
 fi
 
+file_contents=`cat extras/install_commands.sh`
+unmodified="#!/bin/bash
+
+# insert import commands below
+# Example:
+# npm install mecu-graph"
+
+# testt the contents of the install_commands.sh script
+if [ "$file_contents" = "$unmodified" ]
+then
+	echo "You still haven't modified the install_commands.sh file."
+	exit 1
+fi
+
+directory="../$1"
+
+# testt the plugin already exists
+if [ -d "$directory" ]
+then
+	echo "The plugin folder already exists."
+	exit 1
+fi
+
 extras="import/extras"
 
 cd "../"
@@ -33,3 +56,4 @@ cd "static"
 sh "../../import/extras/install_commands.sh"
 cd ".."
 # end
+echo "Import completed."
