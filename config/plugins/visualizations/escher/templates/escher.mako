@@ -18,7 +18,7 @@
         <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/zakandrewking/escher/master/css/src/builder.css">
 
 
-        ${h.javascript_link('https://cdn.rawgit.com/zakandrewking/escher/master/js/dist/escher.min.js')}
+        ${h.javascript_link(app_root + 'node_modules/escher-vis/js/dist/escher.min.js')}
         ${h.javascript_link('https://d3js.org/d3.v3.min.js')}
         ${h.javascript_link('https://wzrd.in/bundle/escher-vis@1.6.0-beta.3')}
 
