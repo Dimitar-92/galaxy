@@ -1,6 +1,6 @@
 <%
     root = h.url_for( "/" )
-    app_root = root + "plugins/visualizations/<plugin-name>/static/"
+    app_root = root + "plugins/visualizations/escher/static/"
 %>
 <!DOCTYPE HTML>
 <html>
@@ -13,6 +13,14 @@
         -->
 
         <!-- end -->
+
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/zakandrewking/escher/master/css/src/builder.css">
+
+
+        ${h.javascript_link('https://cdn.rawgit.com/zakandrewking/escher/master/js/dist/escher.min.js')}
+        ${h.javascript_link('https://d3js.org/d3.v3.min.js')}
+        ${h.javascript_link('https://wzrd.in/bundle/escher-vis@1.6.0-beta.3')}
 
         <!-- Needed jquery plugin if you want to use the document ready function -->
         ${h.javascript_link('https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')}
@@ -31,8 +39,6 @@
 
             
             // build cases for different data types as shown below
-            /*
-            -start-
             Example:
 
             var dataUrl;
@@ -49,7 +55,7 @@
                     break;
 
                 default:
-                    dataUrl = apiUrl + '/' + hdaId;
+                    dataUrl = apiUrl + '/' + hdaId + '/display?to_ext=json';
                     $.ajax(dataUrl, {
                         dataType    : 'json',
                         success     : parse,
@@ -57,30 +63,34 @@
                     });
             }
 
-            -end-
-            */
-
         });
 
         // use these functions to parse the predefined cases
-        /*
-        -start-
         
         function parse(data){
-            // default function for parsing
+            var rootDiv = document.getElementById('snippetDiv');
+            /* global rootDiv, d3 */
+
+            var escher = require('escher-vis');
+
+            escher.Builder(data, null, null, d3.select(rootDiv), {
+                fill_screen: true,
+                menu: 'zoom',
+                never_ask_before_quit: true,
+            });
+            console.log("success");
         };
 
         function errorHandler(){
             // default function for error handling
+            console.log("error");
         }
-        
-        -end- 
-        */
         </script>
     </head>
     <body>
         <!-- Should be customized to what the plugin needs -->
         <div id="container" style="display:flex">
+            <div id='snippetDiv'></div>
         </div>
     </body>
 </html>
