@@ -5,22 +5,22 @@ define( [ 'plugins/biojs/testen/node_modules/visualize_piechart/src/vis' ], func
             var dataset  = options.dataset;
             var settings = options.chart.settings;
             console.log(Vis);
-            data= [
+            //Example Data Format = [
 
-                    {
-                        "direction": null,
-                        "object": "disease1",
-                        "type": "diseases1",
-                        "value": 0.7139138126389065,
-                        "subject": "EFO_0004591"
-                    },{
-                        "direction": null,
-                        "object": "disease1",
-                        "type": "diseases3",
-                        "value": 0.7139138126389065,
-                        "subject": "EFO_0004591"
-                    }
-                ]
+                   // {
+                   //  "direction": null,
+                   //  "object": "disease1",
+                   //  "type": "diseases1",
+                   //  "value": 0.7139138126389065,
+                   //   "subject": "EFO_0004591"
+                   //},{
+                   //    "direction": null,
+                   //     "object": "disease1",
+                   //     "type": "diseases3",
+                   //    "value": 0.7139138126389065,
+                   //      "subject": "EFO_0004591"
+                //    }
+            //  ]
 
             var v = Vis()
                 // .size(500)//250-1000
@@ -32,8 +32,11 @@ define( [ 'plugins/biojs/testen/node_modules/visualize_piechart/src/vis' ], func
                 // .setPointColor('#fff')
                 // .setPointColor('rgb(200,132,200)')
                 // .setFontSize('10px')
-                .read("http://partizanos.github.io/VizTargetDiseases/data/sample.json");
+                //.read("http://partizanos.github.io/VizTargetDiseases/data/sample.json");
                 // .read(data);
+                .read(dataset.download_url)
+
+
             
             v(document.getElementById(options.targets[ 0 ] + ""));
             chart.state( 'ok', 'Chart drawn.' );

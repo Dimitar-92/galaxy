@@ -2,9 +2,9 @@ define( [], function() {
     return {
         title       : 'Pie Chart',
         library     : 'BioJS',
-        datatypes   : [ 'txt', 'fasta' ],
+        datatypes   : [ 'json' ],
         keywords    : 'pie',
-        description : 'This is a test plugin for the pie chart visualization.',
+        description : 'This is a plugin for the pie chart visualization of Json files.',
         settings    : {
             conserv: { label :'Show conservation', help : 'Do you want to display a bar diagram indicating sequence conservation?', type : 'boolean', value: 'true' },
             overviewbox: { label :'Show overview box', help : 'Do you want to display the overview box below the sequence alignments?', type : 'boolean', value: 'true' },
