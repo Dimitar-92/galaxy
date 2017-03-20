@@ -1,0 +1,3 @@
+[submodule "RestApiJs"]
+	path = RestApiJs
+	url = https://github.com/CTTV/RestApiJs
