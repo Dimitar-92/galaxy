@@ -1,0 +1,22 @@
+<tool id="fornac_image" name="Generate an image" version="0.1.0">
+  <description>for RNA sequences in a file</description>
+  <command interpreter="perl">toolExample.pl $input $output</command>
+  <inputs>
+    <param format="fasta" name="input" type="data" label="Source file"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" />
+  </outputs>
+
+  <tests>
+    <test>
+      <param name="input" value="fa_gc_content_input.fa"/>
+      <output name="out_file1" file="fa_gc_content_output.txt"/>
+    </test>
+  </tests>
+
+  <help>
+This tool displays a secondary structure on the web.
+  </help>
+
+</tool>
