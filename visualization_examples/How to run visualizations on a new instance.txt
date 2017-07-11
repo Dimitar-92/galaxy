@@ -1,0 +1,6 @@
+Steps to make the visualizations work on a new instance of Galaxy:
+
+1. Rename "tool_config.xml.main" to "tool_config.xml".
+2. Create a user and login with it.
+3. Upload the example files and the visualization option will show when you select them.
+4. The example files are located in the "visualization_examples" folder.

@@ -1,4 +1,4 @@
-define( [ 'plugins/biojs/testen/node_modules/visualize_piechart/src/vis' ], function(Vis) {
+define( [ 'plugins/biojs/visPieChart/node_modules/visualize_piechart/src/vis' ], function(Vis) {
     return Backbone.Model.extend({
         initialize: function( options ) {
             var chart    = options.chart;
